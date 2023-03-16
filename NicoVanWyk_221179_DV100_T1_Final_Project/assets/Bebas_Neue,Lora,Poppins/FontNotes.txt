@@ -1,0 +1,12 @@
+CSS rules to specefic families:
+
+font-family: 'Bebas Neue', cursive;
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+
+
+To embed a font, copy the code into the <head> of your html:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@1,700&family=Poppins:wght@700&display=swap" rel="stylesheet">
