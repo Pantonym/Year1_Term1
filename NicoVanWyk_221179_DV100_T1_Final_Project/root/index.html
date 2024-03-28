@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+
     <!-- Meta Data -->
     <meta author: Nico van Wyk>
     <meta studentnumber: 221179>
@@ -42,7 +43,6 @@
 
 </head>
 
-
 <body>
 
     <!-- Navbar -->
@@ -63,14 +63,15 @@
                         <a class="nav-link poppins font_18 active" href="index.html#header">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link poppins font_18" aria-current="page"
+                            href="index.html#recent_releases">Recent Releases</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link poppins font_18" href="index.html#popular_albums">Popular Albums</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link poppins font_18" aria-current="page" href="index.html#recent_releases">Recent
-                            Releases</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link poppins font_18 active" aria-current="page" href="about.html">About Us</a>
+                        <a class="nav-link poppins font_18 active" aria-current="page"
+                            href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link poppins font_18 active" href="playlist.html">My Playlist</a>
@@ -90,56 +91,75 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
 
-    <!-- About Us and Contact Form -->
-    <div class="container" id="about_div">
-        <div class="row">
-            <div class="col-sm-6">
-                <h2 class="lora font_24">This Is Us</h2>
-                <h1 class="poppins font_48" style="margin-bottom: 20px;">Stream</h1>
-                <p class="lora font_18">The only home for pop music you would ever need, Stream proposes a new type of
-                    streaming website that carefully curates every song and album it hosts to give personalized, and
-                    fitting, songs to each user. Stream is available around the world, for any and every country.</p>
+    <!-- Artist Header -->
+    <div class="header" id="header">
 
-                <br>
+        <!-- Artist Info -->
+        <div class="card card_css_artist">
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 lora font_36">Jon Bellion</h6>
+                <h5 class="card-title poppins font_72">The Human Condition</h5>
 
-                <ul>
-                    <li><img src="../assets/icons/contact/email_icon.svg" alt=""></li>
-                    <li class="info_tab_text lora font_18">info@stream.co</li>
+                <button class="font_24 poppins btnHeader btnHeaderBlack">Play</button>
+                <button class="font_24 poppins btnHeader btnHeaderWhite">Shuffle</button>
+                <button class="btnHeaderLike">
+                    <div class="imgHeaderLike"></div>
+                </button>
 
-                    <li><img src="../assets/icons/contact/phone_icon.svg" alt=""></li>
-                    <li class="info_tab_text lora font_18">+27 12 345 6789</li>
-                </ul>
-
-                <div id="embedded_map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229627.41939093283!2d27.95729129701553!3d-25.93757474084365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window!5e0!3m2!1sen!2sza!4v1648744826139!5m2!1sen!2sza"
-                        width="580" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
             </div>
+        </div>
 
-            <div class="col-sm-6">
-                <form class="contact_form">
+    </div>
 
-                    <h3 class="font_24">GET IN TOUCH</h3>
+    <!-- Featured Artist -->
+    <div class="featured_artist">
+        <!-- Featured Video -->
+        <iframe class="left iframe_featured" width="560" height="315"
+            src="https://www.youtube.com/embed/etIXDCSB_VU?si=4GSEdG2HsWhOOvF4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                    <input class="poppins font_18 inpContact" type="text" id="name" name="name" placeholder="Your Name">
+        <!-- Featured Artist Info -->
+        <div class="card card_css_featured_artist">
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 poppins font_24">Featured Artist</h6>
+                <h5 class="card-title poppins font_48">Aurora</h5>
 
-                    <input class="poppins font_18 inpContact" type="text" id="email" name="email" placeholder="Your Email">
+                <p class="card-body lora font_18"> Hailing from Norway, AURORA has become one of the most famous singers
+                    of
+                    this generation, even lending her voice to Disney's <b>Frozen 2</b>! With her new album, The Gods We
+                    Can
+                    Touch, she teams up, among many others, famous French singer <b>Pomme</b>.
 
-                    <select class="poppins font_18 otherContact" name="subject" id="subject">
-                        <option value="" disabled selected>Choose A Subject</option>
-                        <option>Customer Service</option>
-                        <option>Account Information</option>
-                        <option>Subscriptions</option>
-                    </select>
+                    <br><br>
 
-                    <textarea class="poppins font_18 inpContact" name="message" id="message" cols="30"
-                        rows="15" placeholder="Your Message Here"></textarea>
+                    With her career showing no signs of slowing down, you can enjoy yet another magnificient album from
+                    a <b>magnificient</b> singer!
+                </p>
 
-                    <input class="poppins font_18 otherContact" type="submit" id="play" value="Play">
+            </div>
+        </div>
+    </div>
 
-                </form>
+    <!-- Recent Releases -->
+    <div id="recent_releases">
+        <p class="bebas font_24"> Recent Releases </p>
+
+        <div id="albumRow" class="container">
+            <div class="row">
+                <!-- Albums will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Popular Albums -->
+    <div id="popular_albums">
+        <p class="bebas font_24"> Popular Albums </p>
+
+        <div id="albumRowPopular" class="container">
+            <div class="row">
+                <!-- Albums will be dynamically added here -->
             </div>
         </div>
     </div>

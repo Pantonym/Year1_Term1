@@ -165,7 +165,7 @@ Once the project is downloaded, open the `index.html` file. Afterwards, either r
 <!-- Development PROCESS -->
 ## Development Process
 ### Architecture
-The application consists of multiple HTML pages. It communicates with JSON files to receive information. `AJAX` was used to contact the files.
+The application consists of multiple HTML pages. It communicates with JSON files to receive information. `AJAX` was used to contact the files. Google Font links wer also used, meaning the font files were deleted to save space on the repository.
 ### Design Frame
 The design frame was not generated as the wireframes were supplied to the developer.
 ### Solution
