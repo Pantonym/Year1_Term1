@@ -2,417 +2,178 @@
 <html>
 
 <head>
-    <!-- Meta Data -->
 
+    <!-- Meta Data -->
     <meta author: Nico van Wyk>
     <meta studentnumber: 221179>
     <meta subject: DV100>
     <meta lecturer: Tsungai Katsuro>
     <meta class: 1>
 
+    <!-- **Added in project revival -->
     <meta This page is the home page, and contains featured artists, recent releases and popular releases sections>
+    <meta name="Description"
+        content="Stream is the best place to stream all of your favorite songs and albums. Stream music at an affordable price.">
+    <meta name="keywords"
+        content="Songs, Music, Playlists, Stream, Pop, Rock, Albums, Grammy, Stream Music, Stream Albums, popular music, popular songs, recent albums, recent songs">
 
     <!-- Title -->
-    <title>Final Assignment - Nico van Wyk</title>
+    <title>Final Assignment - Nico van Wyk - Year 1 Term 1</title>
 
     <!-- css links -->
     <link rel="stylesheet" href="../css/main.css">
 
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jQuery Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- javaScript Link -->
+    <script src="../js/index.js"></script>
+
     <!-- font links -->
+    <!-- **Added online links instead of local links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@1,700&family=Poppins:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
 </head>
 
-<body class="gradient">
+<body>
 
-    <div class="header">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light w-100 navbar_bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="margin-right: 50px;">
+                <div class="nav_image"></div>
+            </a>
 
-        <!-- Nav Panel -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="nav-holder">
-
-            <ul>
-
-                <a href="index.html">
-                    <li>
-                        <img class="nav-image left" src="../assets/images/icons/logo/stream_logo_black.png">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link poppins font_18 active" href="index.html#header">Home</a>
                     </li>
-                </a>
+                    <li class="nav-item">
+                        <a class="nav-link poppins font_18" href="index.html#popular_albums">Popular Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link poppins font_18" aria-current="page"
+                            href="index.html#recent_releases">Recent Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link poppins font_18 active" aria-current="page"
+                            href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link poppins font_18 active" href="playlist.html">My Playlist</a>
+                    </li>
+                </ul>
 
-                <li> <a class="poppins font-small" href="index.html #recent-releases"> Recent Releases </a> </li>
-
-                <li> <a class="poppins font-small" href="index.html #popular-albums"> Popular Albums </a> </li>
-
-                <li> <a class="poppins font-small" href="about.html #about-page"> About Label </a> </li>
-
-                <li> <a class="poppins font-small" href="playlist.html"> My Playlist </a> </li>
-
-                <li>
-                    <div class="search-bar right">
-
-                        <div class="search-text lora font-small"> Search... </div>
-
-                        <div class="search-icon"> <img src="../assets/images/icons/other/search_icon.svg"></div>
-
-                    </div>
-                </li>
-
-            </ul>
-
+                <form class="d-flex ms-auto" style="margin-right: 5%;">
+                    <input class="form-control me-2 nav_search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="nav_btn" type="submit"><img src="../assets/icons/other/search_icon.svg"></button>
+                </form>
+            </div>
         </div>
+    </nav>
+
+    <!-- script that allows the navbar toggle to access the dropdown menu -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Artist Header -->
+    <div class="header" id="header">
 
         <!-- Artist Info -->
+        <div class="card card_css_artist">
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 lora font_36">Jon Bellion</h6>
+                <h5 class="card-title poppins font_72">The Human Condition</h5>
 
-        <div id="artist-info">
+                <button class="font_24 poppins btnHeader btnHeaderBlack">Play</button>
+                <button class="font_24 poppins btnHeader btnHeaderWhite">Shuffle</button>
+                <button class="btnHeaderLike">
+                    <div class="imgHeaderLike"></div>
+                </button>
 
-            <h2 style="font-size: 36px;" class="lora"> Jon Bellion </h2>
-
-            <h1 style="font-size: 72px; margin-bottom: 70px;" class="poppins"> The Human Condition </h1>
-
-            <ul>
-
-                <li>
-
-                    <button class="button back-black left">
-
-                        <div class="button-text white poppins font-large"> Play </div>
-
-                    </button>
-
-                </li>
-
-                <li>
-
-                    <button class="button left">
-
-                        <div class="button-text poppins font-large"> Shuffle </div>
-
-                    </button>
-
-                </li>
-
-                <li>
-                    <img class="left hover-light" src="../assets/images/icons/other/heart_icon.svg" alt="">
-                </li>
-
-            </ul>
-
+            </div>
         </div>
 
     </div>
 
+    <!-- Featured Artist -->
+    <div class="featured_artist">
+        <!-- Featured Video -->
+        <iframe class="left iframe_featured" width="560" height="315"
+            src="https://www.youtube.com/embed/etIXDCSB_VU?si=4GSEdG2HsWhOOvF4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <!-- Featured Artists -->
+        <!-- Featured Artist Info -->
+        <div class="card card_css_featured_artist">
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 poppins font_24">Featured Artist</h6>
+                <h5 class="card-title poppins font_48">Aurora</h5>
 
-    <div id="features-holder">
+                <p class="card-body lora font_18"> Hailing from Norway, AURORA has become one of the most famous singers
+                    of
+                    this generation, even lending her voice to Disney's <b>Frozen 2</b>! With her new album, The Gods We
+                    Can
+                    Touch, she teams up, among many others, famous French singer <b>Pomme</b>.
 
-        <div id="featured-artists" class="right">
-
-            <div id="featured-artists-text" class="right">
-
-                <h2 class="poppins font-large"> Featured Artists </h2>
-
-                <h1 class="poppins font-very-large"> AURORA </h1>
-
-                <br>
-
-                <p class="lora font-small"> Hailing from Norway, AURORA has become one of the most famous singers of
-                    this generation, even lending her voice to Disney's Frozen 2! With her new album, The Gods We Can
-                    Touch, she teams up, among many others, famous French singer Pomme.
-
-                    <br>
-                    <br>
+                    <br><br>
 
                     With her career showing no signs of slowing down, you can enjoy yet another magnificient album from
-                    a magnificient singer!
+                    a <b>magnificient</b> singer!
                 </p>
 
             </div>
-
         </div>
-
-        <!-- i chose a lyric video because youtube disables embedding for most music videos -->
-
-        <div id="featured-artists-video" class="left"> <iframe width="584" height="390"
-                src="https://www.youtube.com/embed/dTLpfE079L8" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe> </div>
-
-        <div class="right" id="button-left"> <img src="../assets/images/icons/other/left_arrow_icon.svg" alt=""> </div>
-
-        <div class="right" id="button-right"> <img src="../assets/images/icons/other/right_arrow_icon.svg" alt="">
-        </div>
-
     </div>
-
 
     <!-- Recent Releases -->
+    <div id="recent_releases">
+        <p class="bebas font_24"> Recent Releases </p>
 
-    <div id="recent-releases">
-
-        <p class="bebas font-large"> Recent Releases </p>
-
-        <div id="album-row1">
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/AURORA_The_Gods_We_Can_Touch.jpeg); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> AURORA </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> The Gods We can
-                        Touch </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-
-                </div>
-
+        <div id="albumRow" class="container">
+            <div class="row">
+                <!-- Albums will be dynamically added here -->
             </div>
-
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/1980_Micheal_Jackson.jpeg); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> Micheal Jackson </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> Thriller </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-
-                </div>
-
-            </div>
-
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/A_Different_Kind_Of_Human_AURORA.jpeg); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> AURORA </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> A Different Kind
-                        of Human </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-
-                </div>
-
-            </div>
-
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/Adele_30.jpeg); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> Adele </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> 30 </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-
-                </div>
-
-            </div>
-
         </div>
-
     </div>
-
 
     <!-- Popular Albums -->
+    <div id="popular_albums">
+        <p class="bebas font_24"> Popular Albums </p>
 
-    <div id="popular-albums">
-
-        <p class="bebas font-large"> Popular Albums </p>
-
-        <div id="album-row2">
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/Ed_Sheeran_Divide.jpeg); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> Ed Sheeran </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> Divide </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-                </div>
-
+        <div id="albumRowPopular" class="container">
+            <div class="row">
+                <!-- Albums will be dynamically added here -->
             </div>
-
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/Fix_Yourself_Not_The_World_The_Wombats.jpeg); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> The Wombats </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> Fix Yourself Not
-                        The World </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-                </div>
-
-            </div>
-
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/Melodrama_Lorde.jpeg); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> Lorde </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> Melodrama </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-
-                </div>
-
-            </div>
-
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/Olivia_Rodrigo_Sour.jpeg); background-size: 369px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> Olivia Rodrigo </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> Sour </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-                </div>
-
-            </div>
-
         </div>
-
-
-
-        <div id="album-row3">
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/The_Human_Condition_Jon_Bellion.jpeg); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> Jon Bellion </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> The Human
-                        Condition </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-
-                </div>
-
-            </div>
-
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/Red_taylors_Version.jpeg); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> Taylor Swift </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> Red - Taylor's
-                        Version </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-                </div>
-
-            </div>
-
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/Taylor_Swift_1989.jpeg); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> Taylor Swift </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> 1989 </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-
-                </div>
-
-            </div>
-
-            <div class="album-holder left"
-                style="background-image: url(../assets/images/music/sia_this_is_acting.webp); background-size: 277px;">
-
-                <div class="play-img"> <img src="../assets/images/icons/other/play_icon.svg" alt=""> </div>
-
-                <div class="play-bar">
-
-                    <p class="play-text lora white" style="font-size: 12px;"> Sia </p>
-
-                    <p class="poppins font-small white" style="padding-left: 10px; margin-top: -5px;"> This is Acting
-                    </p>
-
-                    <img class="heart right" src="../assets/images/icons/other/white_heart_icon.svg" alt="">
-
-                </div>
-
-            </div>
-
-        </div>
-
     </div>
 
-    <!-- Info Panel -->
+    <!-- Footer -->
+    <div class="footer">
+        <p class="poppins font_18 left">Stream Ⓒ 2021</p>
 
-    <div class="info-bar">
-
-        <p class="poppins font-small">Stream Ⓒ 2021</p>
-
-        <div class="info-bar-images right">
-
-            <img class="info-bar-images-margin" src="../assets/images/icons/social/youtube_icon.svg" alt="">
-
-            <img class="info-bar-images-margin" src="../assets/images/icons/social/facebook_icon.svg" alt="">
-
-            <img class="info-bar-images-margin" src="../assets/images/icons/social/twitter_icon.svg" alt="">
-
-            <img class="info-bar-images-margin" src="../assets/images/icons/social/instagram_icon.svg" alt="">
-
-        </div>
-
+        <ul class="right">
+            <li><img class="images_margin" src="../assets/icons/social/youtube_icon.svg" alt=""></li>
+            <li><img class="images_margin" src="../assets/icons/social/facebook_icon.svg" alt=""></li>
+            <li><img class="images_margin" src="../assets/icons/social/twitter_icon.svg" alt=""></li>
+            <li><img class="images_margin" src="../assets/icons/social/instagram_icon.svg" alt=""></li>
+        </ul>
     </div>
 
 </body>

@@ -1,49 +1,32 @@
+/* Variables */
+:root {
+    --main: #F5F5DC;
+    --mainDark: #3e250e;
+    --secondary: #DCDCF5;
+    --tertiary: #855222;
+}
+
 /*Fonts*/
-
-/*Primary Font*/
-
+/*--Primary Font*/
 .poppins {
-    font-family: 'Poppins', sans-serif;
-    src: url("../assets/Bebas_Neue,Lora,Poppins/Poppins/Poppins-Bold.ttf");
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
 }
 
-/*Secondary Font*/
-
+/*--Secondary Font*/
 .lora {
-    font-family: 'Lora', serif;
-    src: url("../assets/Bebas_Neue,Lora,Poppins/Lora/Lora-Italic-VariableFont_wght.ttf");
+    font-family: "Lora", serif;
+    font-style: normal;
 }
 
-/*Tertiary Font*/
-
+/*--Tertiary Font*/
 .bebas {
-    font-family: 'Bebas Neue', cursive;
-    src: url("../assets/Bebas_Neue,Lora,Poppins/Bebas_Neue/BebasNeue-Regular.ttf");
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
 }
-
 
 /*Universal Styling*/
-
-.inline {
-    display: inline-block;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.font-very-large {
-    font-size: 48px;
-}
-
-.font-large {
-    font-size: 24px;
-}
-
-.font-small {
-    font-size: 18px;
-}
-
+/* ----Float */
 .right {
     float: right;
 }
@@ -52,41 +35,55 @@
     float: left;
 }
 
-.gradient {
-    background-image: linear-gradient(#472d14dd, #F5F5DC);
+/* --Font Styling */
+/* ----Font Size */
+.font_12 {
+    font-size: 14px;
 }
 
+.font_14 {
+    font-size: 14px;
+}
+
+.font_18 {
+    font-size: 18px;
+}
+
+.font_24 {
+    font-size: 24px;
+}
+
+.font_36 {
+    font-size: 36px;
+}
+
+.font_48 {
+    font-size: 48px;
+}
+
+.font_64 {
+    font-size: 64px;
+}
+
+.font_72 {
+    font-size: 72px;
+}
+
+/* ----Font Colour */
 .white {
     color: white;
 }
 
-.black {
-    color: black;
-}
-
-.back-white {
-    background-color: white;
-}
-
-.back-black {
-    background-color: black;
-}
-
-
 /*Default tag styling*/
-
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+    background-color: #DCDCF5 !important;
     overflow-x: hidden;
 }
 
 input {
     border-radius: 30px;
-    border: 1px solid #1e140a;
-    background-color: #1e140a;
+    border: 1px solid var(--mainDark);
+    background-color: var(--mainDark);
 
     height: 50px;
     width: 590px;
@@ -99,8 +96,8 @@ input {
 
 select {
     border-radius: 30px;
-    border: 1px solid #1e140a;
-    background-color: #1e140a;
+    border: 1px solid var(--mainDark);
+    background-color: var(--mainDark);
 
     height: 60px;
     width: 605px;
@@ -116,8 +113,8 @@ textarea {
     height: 70px;
 
     border-radius: 30px;
-    border: 1px solid #1e140a;
-    background-color: #1e140a;
+    border: 1px solid var(--mainDark);
+    background-color: var(--mainDark);
 
     margin-bottom: 25px;
     padding-top: 10px;
@@ -127,11 +124,10 @@ textarea {
 }
 
 a:hover {
-    color: #F5F5DC;
+    color: var(--tertiary) !important;
 }
 
 a {
-    color: black;
     margin-right: 40px;
 }
 
@@ -153,91 +149,28 @@ h3 {
     margin: 0px;
 }
 
-hr {
-    border: none;
-    height: 3px;
-    background: black;
+tr {
+    border-bottom: 1px solid black !important;
 }
 
-
 /* All pages layout */
+/* --Navbar */
+/* ----Navbar background */
+.navbar_bg {
+    background-color: var(--main);
+    box-shadow: 0px 2px 10px var(--mainDark);
 
-.nav-image {
-    width: 150px;
+    transition: 0.5s ease;
+}
+
+/* ----This is for the logo, as well as its hover to change colours */
+.nav_image {
+    width: 165px;
     height: 50px;
 
     margin-left: 50px;
-    margin-top: -13px;
-}
 
-.nav-holder {
-    width: 100%;
-    height: 100px;
-
-    padding-top: 50px;
-}
-
-.search-bar {
-    width: 255px;
-    height: 50px;
-
-    border: 3px solid #1e140a;
-    border-radius: 20px;
-
-    background-color: #F5F5DC80;
-
-    text-align: left;
-    font-size: smaller;
-
-    margin-right: 50px;
-}
-
-.search-text {
-    float: left;
-    text-align: center;
-    margin-top: 12px;
-    margin-left: 10px;
-}
-
-.search-icon {
-    float: right;
-
-    width: 18px;
-    height: 18px;
-
-    margin-right: 12.5px;
-    margin-top: 12.5px;
-}
-
-.info-bar {
-    width: 100%;
-    height: 50px;
-
-    padding-left: 122px;
-    padding-right: 122px;
-    margin-bottom: 50px;
-}
-
-.info-bar-images {
-    width: 300px;
-    height: 50px;
-
-    margin-right: 290px;
-    margin-top: -60px;
-}
-
-.info-bar-images-margin {
-    margin-right: 20px;
-}
-
-
-/* Artist Info */
-
-.header {
-    width: 100%;
-    height: 900px;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/music/The_Human_Condition_Jon_Bellion.jpeg");
+    background-image: url("../assets/icons/logo/stream_logo_black.png");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -245,21 +178,105 @@ hr {
     position: relative;
 }
 
-#artist-info {
-    width: 850px;
-    height: 350px;
+.nav_image:hover {
+    background-image: url("../assets/icons/logo/stream_logo_white.png");
 
-    margin-left: 100px;
-    margin-top: 100px;
-    padding-left: 30px;
-    padding-top: 15px;
-
-    background-color: #F5F5DC80;
-    border: 3px solid #1e140a;
-    border-radius: 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-.button {
+/* ----This is for the input. !important is added so that it overrides Bootstrap's styling */
+.nav_search {
+    background-color: white !important;
+
+    border: 2px solid var(--mainDark) !important;
+
+    border-right: none !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+
+    max-width: 200px;
+}
+
+/* ----Once the input is selected, it should not change and ignore default Bootstrap styling */
+.nav_search:focus {
+    border-color: var(--mainDark) !important;
+    box-shadow: none !important;
+}
+
+/* ----This is the search icon to the right of the search box */
+.nav_btn {
+    background-color: white;
+
+    border: 2px solid black;
+
+    border-left: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    padding-bottom: 5px;
+    padding-right: 15px;
+
+    /* ----This allows the search icon to appear directly next to rhe input, forming the illusion that they are connected */
+    margin-left: -10px;
+}
+
+/* --Footer */
+.footer {
+    width: 100%;
+    height: auto;
+
+    padding-left: 8.2%;
+    padding-right: 9%;
+
+    padding-bottom: 8%;
+}
+
+.images_margin {
+    margin-right: 20px;
+}
+
+/* Index Page */
+/* --Artist Info */
+/* ----Background Image */
+.header {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    background-image: url("../assets/albums/The_Human_Condition_Jon_Bellion.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    box-shadow: 0px 2px 10px var(--mainDark);
+}
+
+/* ----Artist info Card */
+.card_css_artist {
+    width: 60%;
+
+    margin-top: 20%;
+    margin-left: 8.2%;
+
+    background-color: rgba(245, 245, 220, 0.75) !important;
+    border: 3px solid var(--mainDark) !important;
+    border-radius: 25px !important;
+
+    padding: 15px;
+}
+
+/* ----Universal styling for the two buttons */
+.btnHeader {
     width: 225px;
     height: 70px;
 
@@ -267,346 +284,273 @@ hr {
     border: 4px solid black;
 
     margin-right: 40px;
-
-    opacity: 1;
 }
 
-.button:hover {
-    opacity: 0.5;
+/* ----Differing styling for the colours of the two buttons, including hover states */
+.btnHeaderBlack {
+    background-color: black;
+    color: white;
 }
 
-.hover-light:hover {
-    opacity: 0.5;
+.btnHeaderBlack:hover {
+    background-color: var(--main);
+    color: black;
 }
 
+.btnHeaderWhite {
+    background-color: white;
+    color: black;
+}
+
+.btnHeaderWhite:hover {
+    background-color: var(--tertiary);
+    color: white;
+}
+
+/* ----The like image, which is inside of a button, and its hover state which changes it to a white version */
+.imgHeaderLike {
+    width: 70px;
+    height: 70px;
+
+    margin-bottom: -25px;
+
+    background-image: url('../assets/icons/other/heart_icon.svg');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.btnHeaderLike {
+    background-color: transparent;
+    border: none;
+}
+
+.imgHeaderLike:hover {
+    background-image: url('../assets/icons/other/white_heart_icon.svg');
+    background-repeat: none;
+    background-size: cover;
+}
 
 /* Featured Artist */
+.featured_artist {
+    width: 100%;
+    height: auto;
 
-#features-holder {
-    width: 1284px;
-    height: 560px;
+    padding: 10%;
+}
 
-    margin-bottom: 80px;
-    margin-top: -60px;
+.card_css_featured_artist {
+    width: 50%;
+
+    padding: 15px;
+    padding-bottom: 0px !important;
+
+    background-color: var(--main) !important;
+    border: 4px solid var(--mainDark) !important;
+    border-radius: 15px !important;
+
+    z-index: 0;
+}
+
+.iframe_featured {
+    margin-right: -20px;
+    margin-top: -10px;
 
     position: relative;
-
-    z-index: 9;
+    z-index: 1;
 }
 
-#featured-artists-video {
-    width: 584px;
-    height: 390px;
-
-    margin-top: -568px;
-    margin-left: 122px;
-    margin-right: 122px;
-}
-
-#featured-artists {
-    width: 700px;
-    height: 560px;
-
-    background-color: #F5F5DC;
-    border: 4px solid #1e140a;
-    border-radius: 15px;
-}
-
-#featured-artists-text {
-    width: 480px;
-    height: 500px;
-
-    padding-top: 20px;
-    padding-right: 80px;
-}
-
-#button-left {
-    width: 50px;
-    height: 50px;
-
-    margin-right: 100px;
-    margin-top: -80px;
-}
-
-#button-right {
-    width: 50px;
-    height: 50px;
-
-    margin-right: 30px;
-    margin-top: -80px;
-}
-
-
-/* albums */
-
-.album-holder {
-    width: 277px;
-    height: 277px;
-
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.bg-image {
-    width: 277px;
-    height: 277px;
-}
-
-/* Recent Releases */
-
-#recent-releases {
+/* --Recent Releases */
+#recent_releases {
     width: 100%;
-    height: 332.5px;
+    height: auto;
 
-    padding-left: 122px;
-    padding-right: 122px;
+    padding-left: 10%;
+    padding-right: 10%;
 
     margin-bottom: 80px;
 
     opacity: 1;
 }
 
-.play-img {
+.album_img {
+    width: 277px;
+    height: 277px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* ----Hover Items */
+.hover_items {
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.hover_items:hover {
+    opacity: 1;
+}
+
+.play_img {
     width: 277px;
     height: 207px;
 
     text-align: center;
 
-    padding-top: 65.5px;
-
-    transition: .5s ease;
-    opacity: 0;
+    padding-top: 90px;
 }
 
-.play-bar {
+.play_div {
     width: 277px;
     height: 70px;
 
-    background-color: gray;
+    background-color: var(--main);
 
-    margin-top: -78px;
-
-    transition: .5s ease;
-    opacity: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
-.play-text {
+.play_title {
     padding-top: 10px;
     padding-left: 10px;
-
-    transition: .5s ease;
-    opacity: 0;
+    color: black;
 }
 
-.heart {
-    width: 40px;
-    height: 40px;
-
-    margin-top: -62px;
-    margin-bottom: 15px;
-    margin-right: 15px;
-
-    transition: .5s ease;
-    opacity: 0;
-}
-
-.album-holder:hover .play-img {
-    opacity: 1;
-}
-
-.album-holder:hover .play-bar {
-    opacity: 1;
-}
-
-.album-holder:hover .play-text {
-    opacity: 1;
-}
-
-.album-holder:hover .heart {
-    opacity: 1;
-}
-
-
-/* Popular Albums */
-
-#popular-albums {
+.play_text {
     width: 100%;
-    height: 640px;
+    height: auto;
 
-    padding-left: 122px;
-    padding-right: 122px;
+    padding-left: 10px;
+    color: black;
 
-    margin-bottom: 60px;
+    margin-top: -5px;
 }
 
+/* --Popular Albums */
+#popular_albums {
+    width: 100%;
+    height: auto;
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    margin-bottom: 80px;
+
+    opacity: 1;
+}
 
 /* About Page */
-
-#row1 {
-    margin-top: 175px;
-}
-
-#about-page {
+#about_div {
+    height: auto;
     width: 100%;
-    height: 725px;
+
+    padding-top: 12%;
+    padding-bottom: 10%;
 }
 
-#play {
-    background-color: black;
-    color: white;
-
-    float: right;
-    height: 75px;
-    width: 225px;
-
-    margin-top: 0px;
-}
-
-#lorem {
-    width: 590px;
-    height: 200px;
-
-    margin-left: 122px;
-}
-
-#contact-tab {
-    width: 590px;
-    height: 50px;
-
-    margin-left: 122px;
-    margin-top: 100px;
-}
-
-.contact-tab-text {
+/* --info tab */
+.info_tab_text {
     width: auto;
     height: 50px;
 
-    text-align: center;
-    font-family: lora;
-    font-size: font-small;
-
-    float: left;
-
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
-#embedded-map {
-    width: 580px;
-    height: 200px;
+#embedded_map {
+    width: 40%;
+    height: 10%;
 
-    margin-left: 122px;
+    margin-left: 8%;
     margin-top: 25px;
 }
 
-#form {
-    width: 600px;
-    height: 500px;
-    background-color: #F5F5DC80;
+/* --Contact form */
+.contact_form {
+    background-color: var(--main);
 
-    border: 5px solid #1e140a;
+    border: 5px solid var(--mainDark);
     border-radius: 60px;
 
     padding: 30px;
-    margin-right: 122px;
-    margin-top: -185px;
 }
 
-.about-text {
-    padding: 0;
-    margin: 0;
+.inpContact {
+    margin-top: 25px;
+    width: 100%;
+
+    padding: 20px !important;
 }
 
+.otherContact {
+    margin-top: 25px;
+    width: 100%;
+}
 
 /* Playlist Page */
+.playlist_container {
+    width: 100%;
+    height: auto;
 
-#playlist-frame {
-    width: 1300px;
-    height: 550px;
+    text-align: left;
 
-    margin-top: 85px;
-    margin-left: 122px;
-    margin-right: 122px;
+    padding-top: 10%;
 }
 
-#main-image {
+.playlist_thumbnail {
     width: 470px;
     height: 470px;
 
     text-align: center;
     background-color: gray;
+
+    background-image: url('../assets/albums/sia_this_is_acting.webp');
+    background-size: 470px;
 }
 
-#main-image-text {
+.main_image_text {
     width: 470px;
     height: 320px;
 
     color: white;
-
     text-align: center;
 
     padding-top: 100px;
 }
 
-#main-fave {
-    width: auto;
-    height: auto;
-
-    font-family: poppins;
-    font-size: 64px;
-
-    padding: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#main-mix {
-    width: auto;
-    height: auto;
-
-    font-family: poppins;
-    font-size: 48px;
-
-    margin: 0;
-    padding: 0;
-}
-
-#small-logo {
+.small_logo {
     width: 50px;
     height: 50px;
 
     margin-top: -50px;
 }
 
-#audio-player {
-    width: 700px;
-    height: 470px;
-
-    float: right;
-
-    margin-top: 90px;
-    margin-left: 70px;
-}
-
-.audio-player-li {
+/* --Audio Player */
+.playlists {
     margin-right: 60px;
     margin-left: 10px;
-
-    font-size: font-small;
-    font-family: poppins;
 }
 
-#active-song {
-    width: 1300px;
+.playlists_active {
+    text-decoration: underline;
+}
+
+#active_song {
+    width: 100%;
     height: 30px;
 
-    margin-top: 140px;
-    margin-left: 122px;
-    margin-right: 122px;
+    margin-top: 50px;
+    margin-left: 8%;
 }
 
-#dark-bar {
+#dark_bar {
     width: 300px;
     height: 0.1px;
 
@@ -628,7 +572,7 @@ hr {
     margin-left: -2px;
 }
 
-#light-bar {
+#light_bar {
     width: 880px;
     height: 0.1px;
 
@@ -637,16 +581,15 @@ hr {
     float: left;
 }
 
-#song-description {
+#song_description {
     width: 100%;
     height: 100px;
 
     margin-top: 40px;
-    margin-left: 122px;
-    margin-right: 122px;
+    margin-left: 7%;
 }
 
-#song-desc-image {
+#song_desc_image {
     width: 70px;
     height: 70px;
 
@@ -677,7 +620,7 @@ hr {
     margin-right: 30px;
 }
 
-.left-right {
+.left_right {
     width: 70px;
     height: 70px;
 
@@ -686,7 +629,7 @@ hr {
     margin-top: 25px;
 }
 
-#other-info {
+#other_info {
     width: 160px;
     height: 40px;
 

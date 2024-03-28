@@ -1,0 +1,26 @@
+[
+    {
+        "albumID": 1,
+        "artistName": "AURORA",
+        "albumTitle": "The Gods We can Touch",
+        "albumImage": "../assets/albums/AURORA_The_Gods_We_Can_Touch.jpeg"
+    },
+    {
+        "albumID": 2,
+        "artistName": "Adele",
+        "albumTitle": "30",
+        "albumImage": "../assets/albums/Adele_30.jpeg"
+    },
+    {
+        "albumID": 3,
+        "artistName": "Micheal Jackson",
+        "albumTitle": "Thriller",
+        "albumImage": "../assets/albums/1980_Micheal_Jackson.jpeg"
+    },
+    {
+        "albumID": 4,
+        "artistName": "AURORA",
+        "albumTitle": "A Different Kind of Human",
+        "albumImage": "../assets/albums/A_Different_Kind_Of_Human_AURORA.jpeg"
+    }
+]

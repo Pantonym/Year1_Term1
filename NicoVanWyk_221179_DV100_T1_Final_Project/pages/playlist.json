@@ -1,0 +1,50 @@
+[
+    {
+        "playlistNum": 1,
+        "artistName": "Jon Bellion",
+        "songTitle": "Morning in America",
+        "albumTitle": "The Human Condition",
+        "duration": "04:27",
+        "active": false
+    },
+    {
+        "playlistNum": 2,
+        "artistName": "AURORA",
+        "songTitle": "Everything Matters",
+        "albumTitle": "The Gods We Can Touch",
+        "duration": "03:34",
+        "active": true
+    },
+    {
+        "playlistNum": 3,
+        "artistName": "Ed Sheeran",
+        "songTitle": "Castle On The Hill",
+        "albumTitle": "Divide",
+        "duration": "04:21",
+        "active": false
+    },
+    {
+        "playlistNum": 4,
+        "artistName": "Jon Bellion",
+        "songTitle": "He Is the Same",
+        "albumTitle": "The Human Condition",
+        "duration": "04:02",
+        "active": false
+    },
+    {
+        "playlistNum": 5,
+        "artistName": "Taylor Swift",
+        "songTitle": "Blank Space",
+        "albumTitle": "1989",
+        "duration": "03:52",
+        "active": false
+    },
+    {
+        "playlistNum": 6,
+        "artistName": "Sia",
+        "songTitle": "Alive",
+        "albumTitle": "This is Acting",
+        "duration": "04:23",
+        "active": false
+    }
+]

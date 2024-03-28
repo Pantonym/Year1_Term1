@@ -1,0 +1,49 @@
+[
+    {
+        "albumID": 1,
+        "artistName": "Ed Sheeran",
+        "albumTitle": "Divide",
+        "albumImage": "../assets/albums/Ed_Sheeran_Divide.jpeg"
+    },
+    {
+        "albumID": 2,
+        "artistName": "The Wombats",
+        "albumTitle": "Fix Yourself Not The World",
+        "albumImage": "../assets/albums/Fix_Yourself_Not_The_World_The_Wombats.jpeg"
+    },
+    {
+        "albumID": 3,
+        "artistName": "Lorde",
+        "albumTitle": "Melodrama",
+        "albumImage": "../assets/albums/Melodrama_Lorde.jpeg"
+    },
+    {
+        "albumID": 4,
+        "artistName": "Olivia Rodrigo",
+        "albumTitle": "Sour",
+        "albumImage": "../assets/albums/Olivia_Rodrigo_Sour.jpeg"
+    },{
+        "albumID": 5,
+        "artistName": "Jon Bellion",
+        "albumTitle": "The Human Condition",
+        "albumImage": "../assets/albums/The_Human_Condition_Jon_Bellion.jpg"
+    },
+    {
+        "albumID": 6,
+        "artistName": "Taylor Swift",
+        "albumTitle": "Red - Taylor's Version",
+        "albumImage": "../assets/albums/Red_taylors_Version.jpeg"
+    },
+    {
+        "albumID": 7,
+        "artistName": "Taylor Swift",
+        "albumTitle": "1989",
+        "albumImage": "../assets/albums/Taylor_Swift_1989.jpeg"
+    },
+    {
+        "albumID": 8,
+        "artistName": "Sia",
+        "albumTitle": "This is Acting",
+        "albumImage": "../assets/albums/sia_this_is_acting.webp"
+    }
+]
