@@ -76,7 +76,7 @@ To be created
 <!-- <img src="/final/mockups/Hero.png" alt="Mockup" style="height: 600px"/> -->
 
 ### GitHub Pages Link
-To be created
+[To Index Page](https://pantonym.github.io/Year1_Term1/NicoVanWyk_221179_DV100_T1_Final_Project/root/index.html)
 
 <!--PROJECT DESCRIPTION-->
 ### Project Description
