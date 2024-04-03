@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $.ajax({
-        url: 'recentReleases.json', // Path to JSON file
+        url: '../json/recentReleases.json', // Path to JSON file
         dataType: 'json',
         success: function (data) {
             // Iterate through the JSON data
@@ -28,7 +28,7 @@ $(document).ready(function () {
     });
 
     $.ajax({
-        url: 'popularAlbums.json', // Path to JSON file
+        url: '../json/popularAlbums.json', // Path to JSON file
         dataType: 'json',
         success: function (data) {
             // Iterate through the JSON data
@@ -55,7 +55,7 @@ $(document).ready(function () {
     });
 
     $.ajax({
-        url: 'playlist.json', // Path to JSON file
+        url: '../json/playlist.json', // Path to JSON file
         dataType: 'json',
         success: function (data) {
             // Reference to the table body
